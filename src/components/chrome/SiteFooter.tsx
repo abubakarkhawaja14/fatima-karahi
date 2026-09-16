@@ -93,8 +93,14 @@ export function SiteFooter() {
           <span className="flex items-center gap-s2">
             <HalalBadge size={35} /> 100% Halal-Certified · Family-owned · Authentic Pakistani recipes
           </span>
-          <span>
-            © {year} {site.name} · <span lang="ur" dir="rtl">{site.nameUrdu}</span>
+          <span className="flex flex-wrap items-center gap-s3">
+            <Link href="/privacy-policy" className="link-underline text-sage no-underline hover:text-gold">
+              Privacy Policy
+            </Link>
+            <span aria-hidden="true">·</span>
+            <span>
+              © {year} {site.name} · <span lang="ur" dir="rtl">{site.nameUrdu}</span>
+            </span>
           </span>
         </div>
       </div>

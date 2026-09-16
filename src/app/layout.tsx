@@ -5,6 +5,7 @@ import { marcellus, cormorant, openSans, allura, gulzar } from "./fonts";
 import { SiteNav } from "@/components/chrome/SiteNav";
 import { SiteFooter } from "@/components/chrome/SiteFooter";
 import { FloatingActions } from "@/components/chrome/FloatingActions";
+import { EventNotice } from "@/components/chrome/EventNotice";
 import { RestaurantJsonLd } from "@/components/chrome/JsonLd";
 import { SanityLive } from "@/sanity/live";
 import { site } from "@/data/site";
@@ -54,6 +55,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main id="main">{children}</main>
         <SiteFooter />
         <FloatingActions />
+        <EventNotice />
         <RestaurantJsonLd />
         <SanityLive />
         {isDraftMode && <VisualEditing />}

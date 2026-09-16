@@ -342,6 +342,27 @@ body {
   animation: fk-pin-pulse 2.4s var(--ease-soft) infinite;
 }
 
+/* EventNotice — closed envelope fab gets the same gold pulse ring as the
+   map pin, plus a small wiggle so it reads as "flashing"/eye-catching
+   without an actual blinking flash (bad for both a11y and the brand's calm
+   tone). Open state fades + rises into place, like a letter being lifted
+   out and set down — same easing/feel as the site's other reveals. */
+@keyframes fk-envelope-wiggle {
+  0%, 100% { transform: rotate(0deg); box-shadow: 0 0 0 0 color-mix(in srgb, var(--saffron) 45%, transparent); }
+  50%      { transform: rotate(-6deg); box-shadow: 0 0 0 10px color-mix(in srgb, var(--saffron) 0%, transparent); }
+}
+.envelope-fab {
+  animation: fk-envelope-wiggle 2.6s var(--ease-soft) infinite;
+}
+
+@keyframes fk-letter-open {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.letter-card {
+  animation: fk-letter-open 420ms var(--ease-out) both;
+}
+
 /* Nav link underline — gold hairline wipes in from the left */
 .link-underline {
   position: relative;

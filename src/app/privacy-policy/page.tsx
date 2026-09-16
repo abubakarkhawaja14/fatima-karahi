@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Eyebrow } from "@/components/ds/Eyebrow";
 import { BreadcrumbJsonLd } from "@/components/chrome/JsonLd";
 import { site } from "@/data/site";
 
@@ -20,8 +19,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       <section className="bg-emerald pb-[clamp(3rem,6vw,4.5rem)] pt-[calc(84px+clamp(2.5rem,6vw,4rem))] text-center">
-        <Eyebrow size="lg">Legal</Eyebrow>
-        <h1 className="m-0 mt-s4 font-display text-display-l font-normal text-ivory">
+        <h1 className="m-0 font-display text-display-l font-normal text-ivory">
           Privacy Policy
         </h1>
         <p className="mx-auto mt-s3 max-w-[60ch] px-s5 text-body text-sage">

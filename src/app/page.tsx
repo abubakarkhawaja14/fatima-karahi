@@ -8,6 +8,7 @@ import { StoryBand } from "@/components/sections/StoryBand";
 import { CateringSpotlight } from "@/components/sections/CateringSpotlight";
 import { TrustBand } from "@/components/sections/TrustBand";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { Popup } from "@/components/Popup";
 import { sanityFetch } from "@/sanity/live";
 import { CATERING_PACKAGES_QUERY, MENU_QUERY, SITE_PHOTOS_QUERY } from "@/sanity/queries";
 import { buildSitePhotoPool } from "@/sanity/types";
@@ -52,6 +53,7 @@ export default async function HomePage() {
       <CateringSpotlight photoPool={photoPool} packages={cateringPackages} />
       <TrustBand backgroundImage={photoPool["hero-carousel-1"]?.image} />
       <FAQSection variant="light" />
+      <Popup />
     </>
   );
 }

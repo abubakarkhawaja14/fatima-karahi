@@ -131,7 +131,7 @@ export function SiteNav() {
               element ties in specificity with it and silently loses. */}
           <div className="hidden sm:block">
             <Button variant="primary" size="sm" href={orderHref} external={orderExternal}>
-              Order online
+              Order online &amp; Save
             </Button>
           </div>
 
@@ -225,7 +225,7 @@ export function SiteNav() {
 
         <div className="relative flex flex-col gap-s3 px-[clamp(24px,8vw,56px)] pb-s7">
           <Button variant="primary" size="lg" href={orderHref} external={orderExternal}>
-            Order online
+            Order online &amp; Save
           </Button>
           <div className="flex items-center justify-between gap-s3">
             <a href={site.phoneHref} className="font-body text-[0.95rem] text-ivory no-underline">

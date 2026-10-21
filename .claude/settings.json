@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $i=[System.Drawing.Image]::FromFile\\(\"D:\\\\Longradius\\\\fatima\\\\fatima-karahi\\\\public\\\\ppwa.jpg\"\\); \"$\\($i.Width\\)x$\\($i.Height\\)\"; $i.Dispose\\(\\))"
+    ]
+  }
+}

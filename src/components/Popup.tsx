@@ -70,13 +70,13 @@ export function Popup() {
           </svg>
         </button>
 
-        {/* Thanksgiving Image */}
+        {/* Promo Image */}
         <div className="relative flex items-center justify-center overflow-hidden">
           <Image
-            src="/thanksgiving.jpg"
-            alt="Thanksgiving Special"
-            width={1320}
-            height={1620}
+            src="/ppwa.jpg"
+            alt="Special offer"
+            width={1024}
+            height={1024}
             priority
             className="h-auto max-h-[82dvh] w-auto max-w-full object-contain"
           />

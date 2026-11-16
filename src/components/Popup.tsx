@@ -1,3 +1,4 @@
+/* Promo Image */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -69,7 +70,7 @@ export function Popup() {
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
-
+        
         {/* Promo Image */}
         <div className="relative flex items-center justify-center overflow-hidden">
           <Image
